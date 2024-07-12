@@ -117,3 +117,96 @@ body {
     margin-bottom: 10px;
     font-size: 14px;
 }
+
+
+
+.container_MainSpeakers {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #dcf7fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.headerMainSpeakers {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+/* mainSpeakers */
+.speakers {
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.speaker {
+    flex-basis: calc(33.33% - 20px); /* 20px เพื่อความเหมาะสมของช่องว่างระหว่างรายการ */
+    max-width: calc(33.33% - 20px);
+    margin: 10px; /* กำหนดระยะห่างระหว่างรายการ */
+    text-align: center; /* จัดการข้อความตรงกลาง */
+}
+.speaker {
+    width: 300px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.speaker img {
+    width: 150px;
+    height: 150px;
+  
+    object-fit: cover;
+}
+.speaker h2 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+.speaker h3 {
+    font-size: 18px;
+    color: #555;
+    margin: 0 0 10px;
+}
+.speaker p {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+.container_schedule {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #dcf7fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header_schedule {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header_schedule  h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+
+.container_schedule2 {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #dcf7fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.header_schedule2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.header_schedule2  h1 {
+    font-size: 36px;
+    color: #333;
+}
