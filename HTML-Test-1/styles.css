@@ -16,18 +16,19 @@ body {
     background: linear-gradient(to right, #2e3995, #3498db);
     color: #ffffff;
     padding: 20px;
-    text-align: center;
     position: relative;
+    overflow: hidden;
 }
 
 .header-content {
     max-width: 600px;
     margin: 0 auto;
+    text-align: left;
 }
 
-.header h1 {
+.main-title {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1.5;
 }
 
