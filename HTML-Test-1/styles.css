@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    background: linear-gradient(to right, #2e3995, #3498db);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.event-details {
+    margin: 10px 0;
+}
+
+.event-details p {
+    margin: 5px 0;
+}
+
+.description, .details {
+    margin: 20px 0;
+}
+
+.partners img {
+    height: 40px;
+    margin: 0 10px;
+}
+
+.registration {
+    background-color: #00b14f;
+    padding: 20px;
+    text-align: center;
+}
+
+.register-button {
+    background-color: #ffffff;
+    color: #00b14f;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    color: #2e3995;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    background: url('checkmark.png') no-repeat left center;
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
