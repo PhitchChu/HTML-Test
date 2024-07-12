@@ -35,8 +35,9 @@ body {
 
 .sub-title {
     margin: 0;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
+    color: #00FF00; /* สีเขียว */
 }
 
 .event-details {
