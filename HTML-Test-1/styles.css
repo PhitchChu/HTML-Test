@@ -10,6 +10,7 @@ body {
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .header {
@@ -118,8 +119,6 @@ body {
     font-size: 14px;
 }
 
-
-
 .container_MainSpeakers {
     max-width: 650px;
     margin: 0 auto;
@@ -150,14 +149,13 @@ body {
     text-align: center; /* จัดการข้อความตรงกลาง */
 }
 .speaker {
-    width: 300px;
+    width: 100%;
     text-align: center;
     margin-bottom: 40px;
 }
 .speaker img {
     width: 150px;
     height: 150px;
-  
     object-fit: cover;
 }
 .speaker h2 {
@@ -176,37 +174,142 @@ body {
     margin: 0;
 }
 
-.container_schedule {
-    max-width: 650px;
-    margin: 0 auto;
-    background-color: #dcf7fa;
+/* Schedule css */
+.schedule-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #e6f7ff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.header_schedule {
-    text-align: center;
-    margin-bottom: 40px;
+
+.schedule-header {
+    text-align: left; /* ทำให้ส่วนหัวอยู่ทางซ้าย */
+    margin-bottom: 20px;
 }
-.header_schedule  h1 {
-    font-size: 36px;
+
+.schedule-header h1 {
+    font-size: 24px;
+    color: #333;
+    border-left: 3px solid #020524; /* เส้นขีดแนวตั้ง */
+    padding-left: 10px; /* เพิ่มช่องว่างระหว่างเส้นขีดกับข้อความ */
+}
+
+.schedule-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.schedule-item {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* สำหรับการจัดเส้นขีด */
+}
+
+.schedule-time {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 2px 10px; /* ลด padding เพื่อให้สีพื้นหลังพอดีกับข้อความ */
+    display: inline-block; /* ทำให้สีพื้นหลังพอดีกับข้อความ */
+    background-color: #00b14f; /* สีพื้นหลังเขียว */
+    border-radius: 4px; /* เพิ่มมุมโค้งเพื่อความสวยงาม */
+}
+
+.schedule-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
     color: #333;
 }
 
+.schedule-details li {
+    padding-left: 20px;
+    margin-bottom: 5px;
+    position: relative;
+}
 
-.container_schedule2 {
-    max-width: 650px;
-    margin: 0 auto;
-    background-color: #dcf7fa;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.schedule-details li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #00b14f; /* สีเขียว */
+    font-size: 18px;
+    line-height: 14px; /* ให้ตรงกับขนาดของฟอนต์ข้อความ */
 }
-.header_schedule2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-.header_schedule2  h1 {
-    font-size: 36px;
-    color: #333;
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .header-content {
+        max-width: 100%;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .sub-title {
+        font-size: 18px;
+    }
+
+    .event-details .date,
+    .event-details .time,
+    .event-details .location {
+        font-size: 12px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .details {
+        font-size: 12px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content ul li {
+        background-size: 16px;
+        padding-left: 26px;
+        font-size: 12px;
+    }
+
+    .speakers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .speaker {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .schedule-container {
+        padding: 10px;
+    }
+
+    .schedule-header h1 {
+        font-size: 20px;
+    }
+
+    .schedule-time {
+        font-size: 14px;
+    }
+
+    .schedule-details {
+        font-size: 12px;
+    }
 }
