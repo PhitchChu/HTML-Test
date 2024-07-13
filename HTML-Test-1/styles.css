@@ -370,3 +370,41 @@ body {
     }
     /* ส่วนห้องแกรนด์บอลรูม END*/
 }
+
+ /* ณ ห้องเเกรนด์บอลรูม */
+.container_Location {
+    background-color: #003399;
+    color: white;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container_Location img {
+    border-radius: 10px;
+    width: 250px;
+    height: auto;
+}
+.content_Location {
+    margin-right: 20px;
+}
+.content_Location h1 {
+    font-size: 1.2em;
+    margin: 0;
+}
+.content_Location p {
+    margin: 5px 0;
+}
+.button_Location {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1em;
+}
