@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Location</title>
+    <title>Event Registration</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
@@ -16,66 +16,107 @@
             margin: 0;
         }
         .container {
-            background-color: #003399;
-            color: white;
-            border-radius: 10px;
-            width: 600px;
+            background-color: white;
+            border-radius: 15px;
+            width: 800px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            text-align: center;
+        }
+        .header {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .prizes {
             display: flex;
+            justify-content: space-around;
             align-items: center;
-            justify-content: space-between;
+            border: 1px solid #dcdcdc;
+            border-radius: 15px;
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
         }
-        .container img {
-            border-radius: 10px;
-            width: 150px;
+        .prize {
+            text-align: center;
+            max-width: 200px;
+        }
+        .prize img {
+            width: 100px;
             height: auto;
-        }
-        .content {
-            margin-right: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .content h1 {
-            font-size: 1.2em;
-            margin: 0;
-        }
-        .content p {
-            margin: 5px 0;
-        }
-        .button {
-            background-color: #00aaff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-            font-size: 1em;
-        }
-        .icon {
-            display: flex;
-            align-items: center;
             margin-bottom: 10px;
         }
-        .icon i {
-            font-size: 1.5em;
+        .prize div {
+            font-size: 1.1em;
+            color: #333;
+        }
+        .registration {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .note {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #00c853;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #00b342;
+        }
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1em;
+            color: #666;
+        }
+        .contact i {
             margin-right: 10px;
+            font-size: 1.2em;
+            color: #007bff;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <div class="icon">
-                <i class="fas fa-map-marker-alt"></i>
-                <h1>ณ ห้องแกรนด์บอลรูม ชั้น 4</h1>
+        <div class="header"><span style="color: blue;">สำหรับผู้เข้าร่วมงานลุ้นรับรางวัล</div>
+        <div class="prizes">
+            <div class="prize">
+                <img src="https://via.placeholder.com/100" alt="Ipad Gen 10 64GB">
+                <div>Ipad Gen 10 64GB</div>
+                <div>1 รางวัล</div>
             </div>
-            <p>โรงแรมพูลแมน กรุงเทพแกรนด์ สุขุมวิท</p>
-            <a href="https://www.google.com/maps" class="button">ดูแผนที่ google map</a>
+            <div class="prize">
+                <img src="https://via.placeholder.com/100" alt="Apple Watch SE">
+                <div>Apple Watch SE</div>
+                <div>1 รางวัล</div>
+            </div>
+            <div class="prize">
+                <img src="https://via.placeholder.com/100" alt="Bulk SMS 5,000 SMS">
+                <div>Bulk SMS 5,000 SMS</div>
+                <div>10 รางวัล</div>
+            </div>
         </div>
-        <img src="https://via.placeholder.com/150" alt="Event Location">
+        <div class="registration">สำรองที่นั่งล่วงหน้า (จำนวนจำกัด*)</div>
+        <div class="note">หมายเหตุ: สัมมนา Exclusive สำหรับกลุ่มโรงพยาบาล และสาธารณสุข</div>
+        <a href="#" class="button">ลงทะเบียน</a>
+        <div class="contact">
+            <div>ติดต่อสอบถามรายละเอียดเพิ่มเติม <i class="fas fa-phone-alt"></i> <span style="color: blue;">คุณนันทพร ทองเพชร 084-118-4868</span></div>
+        </div>
     </div>
 </body>
 </html>
