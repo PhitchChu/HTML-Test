@@ -313,7 +313,7 @@ body {
         font-size: 12px;
     }
 
-    /* ส่วนห้องแกรนด์บอลรูม */
+    /* ส่วนห้องแกรนด์บอลรูม Start*/
     .location-and-prizes {
         margin: 40px 0;
     }
@@ -368,4 +368,5 @@ body {
         padding: 20px 0;
         background-color: #f0f0f0;
     }
+    /* ส่วนห้องแกรนด์บอลรูม END*/
 }
