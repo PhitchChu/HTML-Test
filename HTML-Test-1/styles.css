@@ -356,9 +356,10 @@ body {
 .container_Product {
     background-color: white;
     border-radius: 15px;
-    width: 800px;
+    max-width: 800px; /* ปรับขนาดให้เท่ากับ .container */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    padding: 20px 40px;
+    padding: 20px;
     text-align: center;
 }
 .header_Product {
