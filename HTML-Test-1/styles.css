@@ -353,11 +353,10 @@ body {
     margin-top: 10px;
     font-size: 1em;
 }
- /* Product */
 .container_Product {
     background-color: white;
     border-radius: 15px;
-    width: 700px;
+    width: 800px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 20px 40px;
     text-align: center;
