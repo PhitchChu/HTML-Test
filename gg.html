@@ -1,121 +1,73 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Registration</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Event Banner</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #1d2d5a;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
-        .container_Product {
-            background-color: white;
-            border-radius: 15px;
-            width: 800px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            padding: 20px 40px;
-            text-align: center;
-        }
-        .header_Product {
-            font-size: 1.4em;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .prizes_Product {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border: 1px solid #dcdcdc;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 20px;
-            background-color: #f9f9f9;
-        }
-        .prize_Product {
-            text-align: center;
-            max-width: 200px;
-        }
-        .prize_Product img {
-            width: 100px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .prize_Product div {
-            font-size: 1.1em;
-            color: #333;
-        }
-        .registration_Product {
-            font-size: 1.3em;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 10px;
-        }
-        .note_Product {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 20px;
-        }
-        .button_Product {
-            background-color: #00c853;
+        .banner_time {
+            background-color: #1d2d5a;
             color: white;
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 20px;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease;
-        }
-        .button_Product:hover {
-            background-color: #00b342;
-        }
-        .contact_Product {
+            padding: 20px;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1em;
-            color: #666;
+            flex-direction: column;
+            align-items: flex-start;
         }
-        .contact_Product i {
+        .top-line_time {
+            display: flex;
+            align-items: center;
+        }
+        .date_time {
+            font-size: 48px;
+            font-weight: bold;
             margin-right: 10px;
-            font-size: 1.2em;
-            color: #007bff;
+        }
+        .year_time {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        .location_time {
+            font-size: 24px;
+            color: #1bcc73;
+            margin-left: 10px;
+        }
+        .bottom-line_time {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .hotel_time {
+            font-size: 18px;
+            color: white;
+            margin-right: 20px;
+        }
+        .time_time {
+            background-color: white;
+            color: #1d2d5a;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container_Product">
-        <div class="header_Product"><span style="color: blue;">สำหรับผู้เข้าร่วมงานลุ้นรับรางวัล</div>
-        <div class="prizes_Product">
-            <div class="prize_Product">
-                <img src="HTML-Test-1/picture/Other/Ipad gen10.png" alt="Ipad Gen 10 64GB">
-                <div>Ipad Gen 10 64GB</div>
-                <div>1 รางวัล</div>
-            </div>
-            <div class="prize_Product">
-                <img src="HTML-Test-1/picture/Other/apple watch.png" alt="Apple Watch SE">
-                <div>Apple Watch SE</div>
-                <div>1 รางวัล</div>
-            </div>
-            <div class="prize_Product">
-                <img src="HTML-Test-1/picture/Other/SMSMKT logo.png" alt="Bulk SMS 5,000 SMS">
-                <div>Bulk SMS 5,000 SMS</div>
-                <div>10 รางวัล</div>
-            </div>
+    <div class="banner_time">
+        <div class="top-line_time">
+            <div class="date_time">24 <span class="year_time">MAR 2023</span> <span class="location_time">At Grand Ballroom 4th Floor</span></div>
         </div>
-        <div class="registration_Product">สำรองที่นั่งล่วงหน้า (จำนวนจำกัด*)</div>
-        <div class="note_Product">หมายเหตุ: สัมมนา Exclusive สำหรับกลุ่มโรงพยาบาล และสาธารณสุข</div>
-        <a href="#" class="button_Product">ลงทะเบียน</a>
-        <div class="contact_Product">
-            <div>ติดต่อสอบถามรายละเอียดเพิ่มเติม <i class="fas fa-phone-alt"></i> <span style="color: blue;">คุณนันทพร ทองเพชร 084-118-4868</span></div>
+        <div class="bottom-line_time">
+            <div class="time_time">เวลา 13:00-19:00 น.</div>
+               <div class="hotel_time">Pullman Bangkok Grande Sukhumvit</div>
         </div>
     </div>
 </body>
