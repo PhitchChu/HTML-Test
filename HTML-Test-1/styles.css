@@ -429,3 +429,18 @@ body {
     color: #007bff;
 }
 
+.green-text {
+    color: green;
+    margin-left: 52px;
+}
+.white-text {
+    color: rgb(247, 226, 226);
+    margin-left: 15px;
+}
+.time {
+    background-color: white;
+    color: #1d2d5a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
